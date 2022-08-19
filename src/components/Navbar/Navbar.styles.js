@@ -4,7 +4,8 @@ export const NavbarContainer = styled.div`
   ${tw`
   flex
   justify-between
-  p-4
+  py-4
+  px-8
   fixed
   top-0
   w-full
@@ -18,5 +19,9 @@ img {
     ${tw`
     h-8
   `}
+  }
+
+  .avatar {
+    padding-right: 4rem;
   }
 `;

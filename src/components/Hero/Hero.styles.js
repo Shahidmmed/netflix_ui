@@ -1,24 +1,42 @@
 import tw, { styled } from "twin.macro";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.header`
   ${tw`
-  p-8
+  
 `}
-  height: 80vh;
+  height: 540px;
   background-size: cover !important;
+  text-align: initial;
+  margin-top: 0;
+  object-fit: contain;
 
   ${(props) =>
-    `background: url('https://image.tmdb.org/t/p/original${props.background}');`}
+    `background: url('https://image.tmdb.org/t/p/original${props?.background}');`}
+
+  .heroContent {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 222px;
+    height: 200px;
+  }
+
+  .fadeBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
 `;
 
 export const HeroTitle = styled.h1`
   ${tw`
     text-5xl
-    font-bold
+    font-extrabold
     mb-4
   `}
-
-  margin-top: 40vh;
 `;
 
 export const HeroDescription = styled.p`
@@ -43,6 +61,8 @@ export const HeroButton = styled.button`
   `}
 
   background-color: rgba(51, 51, 51, 0.5);
+  color: white;
+  border: 0;
 
   &:hover {
     background-color: #e6e6e6;

@@ -2,7 +2,6 @@ import tw, { styled } from "twin.macro";
 
 export const MoviesContainer = styled.div`
   ${tw`
-    my-8
   `}
 `;
 
@@ -12,14 +11,16 @@ export const MoviesTitle = styled.h2`
       font-bold
       uppercase
       mx-8
+      my-0
     `}
+  text-align: initial;
 `;
 
 export const MoviesRow = styled.div`
   ${tw`
       flex
       overflow-x-auto
-      mt-4
+      mt-0
       p-4
     `}
 
